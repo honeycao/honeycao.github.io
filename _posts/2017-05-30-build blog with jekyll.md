@@ -27,6 +27,7 @@ tags:
     * [3、评论](#3、评论)
     * [4、分享](#4、分享)
     * [5、404公益页面](#5、404公益页面)
+* [Refrerence](#Refrerence)
 * [Q&A（持续更新）](#Q&A（持续更新）)
 
 ------
@@ -204,7 +205,19 @@ categories: blog
 
     <script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="http://arthurcao.com" homePageName="ArthurCao的个人博客"></script>
 
+
+
 ------
+
+### <a id="Refrerence"></a>Refrerence
+
+* [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+
+* [Hux blog 模板](https://github.com/Huxpro/huxpro.github.io/blob/master/README.zh.md)
+
+  ​
+
+-------
 
 ### <a id="Q&A（持续更新）"></a>Q&A（持续更新）
 
