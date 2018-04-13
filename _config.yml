@@ -1,78 +1,87 @@
-# Basic
-title: 曹亚强
-subtitle: 袖里乾坤
-description: 山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。
-# 头像里面的标题
-avatarTitle: ArthurCao
-# 头像里面的描述
-avatarDesc: iOS & 生活
-url: "arthurcao.com"
-
-# Comment
-comment:
-    netCloudTie: 2a493b749dcc4c26a3793d480641c20c
-
-# Social
-social:
-    weibo: ArthurCaoV587 
-    github: honeycao
-    # twitter: 
-    mail: arthurcao68@icloud.com
-
-# 百度统计
-baidu: 
-    id: d1b6174eea5dd40a3ce54a35a57d63f9  
-    
-# 《----------------- 上面的信息修改成你自己的 ---------------------------》
-#
-#
-#  _post/ 下的文章更换成你自己的文章
-#  帮忙star一下，感谢~😆 
-#  地址： https://github.com/honeycao/honeycao.github.io
-#
-#
-# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
-
-#文章固定链接样式
-permalink: /blog/:title.html
-
-markdown: kramdown
+# Site settings
+title:      Caoyq Blog
+SEOTitle:   曹亚强的博客 | Caoyq Blog
+header-img: img/home-bg.jpg
+email:      honeycao9268@163.com
+description: "做一个活在现实而不缺乏理想的纯粹的人"
+keyword: "曹亚强, 曹亚强的博客, Caoyq Blog, Caoyq, arthurcao, Arthur, honeycao"
+url: "https://arthurcao.com"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
-kramdown:
-  input:  GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  enable_coderay: true
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-  syntax_highlighter: rouge
 
-# Format
+# SNS settings
+RSS: false
+weibo_username:     
+zhihu_username:     
+github_username:    honeycao
+facebook_username:  
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
-
-# only supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
-# cover_color: clear
-
-# The blog button should not be removed.
-blog_button:
-    title: 主页
-
-# Navigation buttons in the front page.s
-nav:
-    - {title: 归档, description: archive, url: '/navigationItem/archive'}   
-    - {title: 标签, description: tags, url: '/navigationItem/tags'} 
-    - {title: 资源, description: resources, url: '/navigationItem/resources'}     
-    - {title: 关于, description: about, url: '/navigationItem/about'}    
-    
-
-# Pagination
-gems: [jekyll-paginate]
+permalink: pretty
 paginate: 10
-paginate_path: "page/:num/"
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
 
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: 
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: false                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: d1b6174eea5dd40a3ce54a35a57d63f9
+# Google Analytics
+# ga_track_id:             
+# ga_domain: 
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "做一个活在现实而不缺乏理想的纯粹的人"
+sidebar-avatar: /img/avatar-me.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: false                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "Caoyq Blog",
+        href: "http://arthurcao.com"
+    }
+]

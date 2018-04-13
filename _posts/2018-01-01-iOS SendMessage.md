@@ -1,8 +1,11 @@
 ---
-layout: post
-title: iOS消息发送与转发理解
-date: 2018-01-01
-tag: iOS
+layout:     post
+title:      iOS消息发送与转发理解
+date:       2018-01-01
+author:     "caoyq"
+header-img: "img/post-bg-1.jpg"
+tags:
+    - iOS
 ---
 
 > 消息的发送与转发还是利用到oc中的黑魔法runtime实现的
@@ -36,7 +39,7 @@ B_ViewController *bClass = [B_ViewController new];
 
 上面是在A类中调用B类的实例方法简单模式
 
-当我们将 `B_ViewController.m`中的实现方法屏蔽掉之后，会发现系统运行后报错了![](/images/posts/iOSSendMessage/文件.m中不实现方法出现的错误.png)
+当我们将 `B_ViewController.m`中的实现方法屏蔽掉之后，会发现系统运行后报错了![](/img/in-post/iOSSendMessage/文件.m中不实现方法出现的错误.png)
 
 这就是要研究的问题:
 
@@ -63,7 +66,7 @@ B_ViewController *bClass = [B_ViewController new];
 
 先要弄明白 实例对象、类对象、meta类对象、根meta类对象 它们之间的联系，下图简单标明了
 
-![](/images/posts/iOSSendMessage/guanxitu.png)
+![](/img/in-post/iOSSendMessage/guanxitu.png)
 
 
 
@@ -218,7 +221,7 @@ struct objc_cache * _Nonnull cache OBJC2_UNAVAILABLE;
 
 子类没有就去父类寻找，找到之后也会同时将其添加到缓存
 
-![遍历寻找方法以及添加到缓存的流程](/images/posts/iOSSendMessage/seekSelector.png)
+![遍历寻找方法以及添加到缓存的流程](/img/in-post/iOSSendMessage/seekSelector.png)
 
 上面所说的都是成功寻找到了，还有可能找不到，这个怎么处理呢？
 

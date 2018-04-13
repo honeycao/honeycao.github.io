@@ -1,11 +1,12 @@
 ---
-layout: post
-title: 注册苹果开发者账号完整流程之最新版本
-date: 2017-01-02
-tag: 开发者账号
+layout:     post
+title:      注册苹果开发者账号完整流程
+date:       2017-01-02
+author:     "caoyq"
+header-img: "img/post-bg-1.jpg"
+tags:
+    - 开发者账号
 ---
-
-![](/images/posts/appleDeveloper/AppleDeveloper.jpg)
 
 ## 目录
 * [前言](#前言)
@@ -104,7 +105,7 @@ tag: 开发者账号
 
     * 未知错误：可能就是邓白氏公司还没有将更新的信息提交到Apple，再等等就行；
 ![注册开发者账号——未知错误.png](http://upload-images.jianshu.io/upload_images/1896558-af51eeee96171e85.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-﻿
+
 
 ## <a id="付款"></a>付款
 
