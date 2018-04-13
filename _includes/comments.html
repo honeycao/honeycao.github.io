@@ -1,0 +1,21 @@
+<!-- 评论功能 -->
+<section class="post-comments">
+ 
+  <!-- 网易云跟帖 -->
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+  <script>
+    var cloudTieConfig = {
+      url: document.location.href, 
+      sourceId: "",
+      productKey: "{{site.comment.netCloudTie}}",
+      target: "cloud-tie-wrapper"
+    };
+  </script>
+  <script src="https://img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
+
+<!-- UY 友言 BEGIN 暂时有问题，发布评论失败 -->
+<!-- <div id="uyan_frame"></div>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2138570"></script> -->
+<!-- UY END -->
+  
+</section>

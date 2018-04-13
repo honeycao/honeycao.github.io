@@ -1,0 +1,78 @@
+# Basic
+title: 曹亚强
+subtitle: 袖里乾坤
+description: 山不在高，有仙则名。水不在深，有龙则灵。斯是陋室，惟吾德馨。
+# 头像里面的标题
+avatarTitle: ArthurCao
+# 头像里面的描述
+avatarDesc: iOS & 生活
+url: "arthurcao.com"
+
+# Comment
+comment:
+    netCloudTie: 2a493b749dcc4c26a3793d480641c20c
+
+# Social
+social:
+    weibo: ArthurCaoV587 
+    github: honeycao
+    # twitter: 
+    mail: arthurcao68@icloud.com
+
+# 百度统计
+baidu: 
+    id: d1b6174eea5dd40a3ce54a35a57d63f9  
+    
+# 《----------------- 上面的信息修改成你自己的 ---------------------------》
+#
+#
+#  _post/ 下的文章更换成你自己的文章
+#  帮忙star一下，感谢~😆 
+#  地址： https://github.com/honeycao/honeycao.github.io
+#
+#
+# 《--------------- 下面的信息可以自行选择是否修改 ------------------------》
+
+#文章固定链接样式
+permalink: /blog/:title.html
+
+markdown: kramdown
+
+
+kramdown:
+  input:  GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: true
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+  syntax_highlighter: rouge
+
+# Format
+highlighter: rouge
+
+# only supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+# cover_color: clear
+
+# The blog button should not be removed.
+blog_button:
+    title: 主页
+
+# Navigation buttons in the front page.s
+nav:
+    - {title: 归档, description: archive, url: '/navigationItem/archive'}   
+    - {title: 标签, description: tags, url: '/navigationItem/tags'} 
+    - {title: 资源, description: resources, url: '/navigationItem/resources'}     
+    - {title: 关于, description: about, url: '/navigationItem/about'}    
+    
+
+# Pagination
+gems: [jekyll-paginate]
+paginate: 10
+paginate_path: "page/:num/"
+
+
