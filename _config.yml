@@ -1,10 +1,10 @@
 # Site settings
-title:      Caoyq Blog
-SEOTitle:   曹亚强的博客 | Caoyq Blog
+title:      AllenCao Blog
+SEOTitle:   曹亚强的博客 | AllenCao Blog
 header-img: img/home-bg.jpg
 email:      honeycao9268@163.com
 description: "做一个活在现实而不缺乏理想的纯粹的人"
-keyword: "曹亚强, 曹亚强的博客, Caoyq Blog, Caoyq, arthurcao, Arthur, honeycao"
+keyword: "曹亚强, 曹亚强的博客, AllenCao Blog, AllenCao, Caoyq Blog, Caoyq, arthurcao, Arthur, honeycao"
 url: "https://arthurcao.com"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
