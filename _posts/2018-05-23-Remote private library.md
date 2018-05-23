@@ -4,7 +4,7 @@ title:      组件化之私有库的创建
 subtitle:   
 date:       2018-05-23
 author:     "AllenCao"
-header-img: "img/post-bg-2.jpg"
+header-img: "img/post-bg-2.png"
 tags:
     - 私有库
     - 组件化
@@ -42,7 +42,7 @@ $ pod lib create ACTools
 * git管理
 * demo工程
 
-手动创建也是可以的，不过相对于模板创建的话就显得复杂点，因为上面3个条件都要一步一步去实现，就不介绍了，可以看看[手动创建私有库](https://www.jianshu.com/p/5b6e1b2f6bb8)
+手动创建也是可以的，不过相对于模板创建的话就显得复杂点，因为上面3个条件都要一步一步去实现，就不介绍了，可以看看末尾关于手动创建私有库的的参考文章
 
 #### 完善私有库，添加文件
 
@@ -227,10 +227,4 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 1、[如果需要知道导入私有索引库到本地Cocoapods的另外一种方式(需要公钥和私钥)，可以了解下](https://www.jianshu.com/p/5fe1a67f3ee1)
 
-
-
-
-
-
-
-#### 
+2、[如何不使用模板，手动去创建一个本地的私有库](https://www.jianshu.com/p/5b6e1b2f6bb8)
