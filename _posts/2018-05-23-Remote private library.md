@@ -10,9 +10,11 @@ tags:
     - 组件化
 ---
 
+[TOC]
+
 ### 本地私有库
 
-主要介绍比较实用的一个方法，直接给出一个完整的结论。
+一套流程走下去，能完整实现自己的私有库，这就足够了。
 
 #### 根据模板创建本地私有库
 
@@ -173,7 +175,10 @@ $ git push  --tags
 之所以把验证放在tag之后，就是因为如何先验证那么一定会报错，错误就是找不到与spec对应的tag
 
 ```
-//加上 --private，不然有警告导致不通过
+$ pod spec lint
+//出现由于警告没过的，可以加上 --allow-warnings
+$ pod spec lint --allow-warnings
+//也有加上 --private
 $ pod spec lint --private
 ```
 
@@ -185,6 +190,8 @@ $ pod spec lint --private
 
 ```
 $ pod repo push ACSpecs ACTools.podspec
+//上面验证的时候用到 --allow-warnings，这里也需要加上
+$ pod repo push ACSpecs ACTools.podspec --allow-warnings
 ```
 
 其实远程的spec索引库在本地已经存在了，前面已经添加到本地的Cocoapods仓库了，所以我们添加成功后，就已经可以看到了
