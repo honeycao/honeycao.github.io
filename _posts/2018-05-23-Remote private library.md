@@ -230,6 +230,37 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 
 
+### 后续问题
+
+#### 关联私有的Spec文件出错
+
+```
+$ pod repo push MySpecs test.podspec --allow-warnings
+```
+
+执行上面的关联方法，可能会碰到下面的错误
+
+ `The repo MySpecs at ../../../.cocoapods/repos/MySpecs is not clean`
+
+解释：这个是由于本地的Specs库 被修改，本地没有提交一些东西，我们可以进入Specs目录，进行清空
+
+```
+$ cd ~/.cocoapods/repos/MySpecs   
+$ git clean -f
+```
+
+上面步骤依旧解决不了问题，那么我们就需要看看具体的版本管理了
+
+```
+//查看具体版本控制的记录
+$ git status    
+//该push的push 保持git的干净
+```
+
+目前自己遇到的问题，经上个步骤已解决了，自己是由于 私有库.podspec文件修改频繁，没有每次都push到远程的specs库，所以本地存在没有提交的文件。
+
+
+
 ### 参考资料
 
 1、[如果需要知道导入私有索引库到本地Cocoapods的另外一种方式(需要公钥和私钥)，可以了解下](https://www.jianshu.com/p/5fe1a67f3ee1)
