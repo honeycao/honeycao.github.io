@@ -217,17 +217,15 @@ struct objc_cache * _Nonnull cache OBJC2_UNAVAILABLE;
 
 ##### 如何利用缓存进行遍历
 
-查找方法时，会先从缓存中查找，找到直接返回 ；找不到，再去 Class 的方法列表中找。
-
+查找方法时，会先从缓存中查找，找到直接返回 ；找不到，再去 Class 的方法列表中找。<br>
 子类没有就去父类寻找，找到之后也会同时将其添加到缓存
 
-![遍历寻找方法以及添加到缓存的流程](/img/in-post/iOSSendMessage/seekSelector.png)
+![遍历寻找方法以及添加到缓存的流程](/img/in-post/iOSSendMessage/seekSelectorAndCache.png)
 
-上面所说的都是成功寻找到了，还有可能找不到，这个怎么处理呢？
-
+上面所说的都是成功寻找到了，还有可能找不到，这个怎么处理呢？<br>
 就是下面的消息转发
 
-
+---
 
 ### 消息转发
 
