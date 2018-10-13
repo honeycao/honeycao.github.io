@@ -229,6 +229,24 @@ struct objc_cache * _Nonnull cache OBJC2_UNAVAILABLE;
 
 ### 消息转发
 
+#### _objc_msgForward
+
+IMP类型，用于消息转发。当向一个对象发送一条消息，但它并没有实现的时候，`objc_msgForward`会尝试做消息转发（消息发送就是查找IMP，没找到时就用该方法替代IMP）
+
+消息转发所做的几件事（后面详细介绍3个补救方法）
+
+* 调用`resolveInstanceMethod:`方法 (或 `resolveClassMethod:`)。允许用户在此时为该 Class 动态添加实现。如果有实现了，则调用并返回YES，那么重新开始`objc_msgSend`流程。这一次对象会响应这个选择器，一般是因为它已经调用过`class_addMethod`。如果仍没实现，继续下面的动作。
+
+* 调用`forwardingTargetForSelector:`方法，尝试找到一个能响应该消息的对象。如果获取到，则直接把消息转发给它，返回非 nil 对象。否则返回 nil ，继续下面的动作。注意，这里不要返回 self ，否则会形成死循环。
+
+* 调用`methodSignatureForSelector:`方法，尝试获得一个方法签名。如果获取不到，则直接调用`doesNotRecognizeSelector`抛出异常。如果能获取，则返回非nil：创建一个 NSlnvocation 并传给`forwardInvocation:`。
+
+* 调用`forwardInvocation:`方法，将第3步获取到的方法签名包装成 Invocation 传入，如何处理就在这里面了，并返回非ni。
+
+* 调用`doesNotRecognizeSelector:` ，默认的实现是抛出异常。如果第3步没能获得一个方法签名，执行该步骤。
+
+
+
 #### 没有实现方法报错的原因
 
 这是针对上面的第二个问题作出回答，寻找不到方法并不会直接报错，系统有三次补救的机会，三次补救机会都没有找到方法实现才会crash
