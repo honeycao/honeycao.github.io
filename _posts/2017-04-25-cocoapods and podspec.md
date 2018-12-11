@@ -196,6 +196,7 @@ $ pod trunk push CocoaPodDemo.podspec --allow-warnings
 ### <a id="错误集中处理"></a>错误集中处理
 
 **1、验证过程中出现根据路径找不到匹配文件等如下情况**
+
 ```
 - ERROR | [iOS] file patterns: The `resources` pattern did not match any file.
 - - ERROR | [iOS] file patterns: The `source_files` pattern did not match any file.
@@ -206,6 +207,16 @@ $ pod trunk push CocoaPodDemo.podspec --allow-warnings
 * `podspec` 本地验证路径：`~/Library/Caches/CocoaPods/Pods/External`
 * 在该路径下可以找到我们验证的代码库，进入子目录下修改文件路径，或者如果是资源文件不存在，也可以直接添加进去即可
 * 再次执行验证应该就没有这个问题了
+
+**2、[!] Authentication token is invalid or unverified. Either verify it with the email that was sent or register a new session.**
+
+要么是没注册，要么是登录过期，所以需要重新登录下（登录和注册时同一个方式）
+```
+//邮箱 + 用户名
+pod trunk register xxx@yy.com aurhor
+
+//然后到该邮箱下进行验证即可
+```
 
 
 
