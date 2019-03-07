@@ -4,7 +4,7 @@ title:      Mac上搭建本地svn服务器
 subtitle:   
 date:       2017-03-13
 author:     "AllenCao"
-header-img: "img/post-bg-2.png"
+header-img: "img/post-bg-3.png"
 catalog: true
 tags:
     - svn

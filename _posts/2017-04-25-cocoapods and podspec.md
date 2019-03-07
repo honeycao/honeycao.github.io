@@ -3,7 +3,7 @@ layout:     post
 title:      CocoaPods支持导入自己的开源库（一）
 date:       2017-04-25
 author:     "caoyq"
-header-img: "img/post-bg-1.jpg"
+header-img: "img/post-bg-2.jpg"
 catalog: true
 tags:
     - CocoaPods

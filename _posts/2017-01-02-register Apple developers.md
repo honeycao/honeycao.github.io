@@ -3,7 +3,7 @@ layout:     post
 title:      注册苹果开发者账号完整流程
 date:       2017-01-02
 author:     "caoyq"
-header-img: "img/post-bg-1.jpg"
+header-img: "img/post-bg-2.jpg"
 catalog: true
 tags:
     - iOS
