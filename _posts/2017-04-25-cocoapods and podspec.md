@@ -4,26 +4,13 @@ title:      CocoaPods支持导入自己的开源库（一）
 date:       2017-04-25
 author:     "caoyq"
 header-img: "img/post-bg-1.jpg"
+catalog: true
 tags:
     - CocoaPods
 ---
 
-### 目录
-* [前提](#前提)
-* [创建podspec文件](#创建podspec文件)
-* [podspec文件书写](#podspec文件书写)
-* [验证 podspec 文件](#验证 podspec 文件)
-    * [打标签](#打标签)
-    * [注册](#注册)
-    * [验证](#验证)
-* [推送 podspec 文件到cocoapods](#推送)
-* [更新 podspec 文件](#更新)
-* [搜索库](#搜索)
-* [错误集中处理](#错误集中处理)
 
-------
-
-### <a id="前提"></a>前提
+### 前提
 * 有`cocoapods`的基本环境（安装过`cocoapods`）
 * `github`上有相应的开源代码库，或者新建一个代码库
   clone到本地来操作
@@ -37,7 +24,7 @@ tags:
 
 ------
 
-### <a id="创建podspec文件"></a>创建podspec文件
+### 创建podspec文件
 为了让自己的开源库支持`cocoapods`导入，关键就是`podspec`文件
 
 ```
@@ -46,7 +33,7 @@ $ pod spec create cocoapodDemo
 $ pod spec create cocoapodDemo.podspec
 ```
 
-### <a id="podspec文件书写"></a>podspec文件书写
+### podspec文件书写
 在书写`podspec`文件之前，我们的开源代码库需要有一个规范的目录结构（一般包括源码 + demo），也是为了方便后面源码路径的选择
 
 **开源代码库目录结构**
@@ -100,9 +87,9 @@ end
 
 ------
 
-### <a id="验证 podspec 文件"></a>验证 podspec 文件
+### 验证 podspec 文件
 
-#### <a id="打标签"></a>打标签
+#### 打标签
 podspec 中定义的版本号，在开源库中如果没有对应的标签，那么我们在验证之前就需要打个标签
 
 ```
@@ -111,7 +98,7 @@ $ git push --tags   #推送所有标签到远端
 
 ```
 
-#### <a id="注册"></a>注册
+#### 注册
 对于一个新的开源库第一次添加`cocoapods`支持，是需要进行注册的，而且会有邮件进行确认
 
 ```
@@ -122,7 +109,7 @@ $ pod trunk register author@example.com 'author'
 $ pod trunk me
 ```
 
-#### <a id="验证"></a>验证
+#### 验证
 
 * 直接验证
     ```
@@ -150,7 +137,7 @@ $ pod trunk me
 
 ------
 
-### <a id="推送"></a>推送 podspec 文件到cocoapods
+### 推送 podspec 文件到cocoapods
 推送的过程中会再次验证一遍，所以有时候有会出现验证不通过的情况
 
 ```
@@ -166,7 +153,7 @@ $ pod trunk push CocoaPodDemo.podspec --allow-warnings
 
 ------
 
-### <a id="更新"></a>更新 podspec 文件
+### 更新 podspec 文件
 由于我们的开源库版本更新，所以我们的 podspec 文件也必须更新，至于更新步骤就是重复上面步骤
 
 * 修改`podspec`文件中`s.version`对应的版本号
@@ -176,7 +163,7 @@ $ pod trunk push CocoaPodDemo.podspec --allow-warnings
 
 ------
 
-### <a id="搜索"></a>搜索库
+### 搜索库
 一般推送成功之后，我们并不能直接搜索到我们的库，具体怎么做，需要分为两种情况
 
 * **首次推送成功**：需先删除本地缓存再进行搜索
@@ -193,7 +180,7 @@ $ pod trunk push CocoaPodDemo.podspec --allow-warnings
 
 ------
 
-### <a id="错误集中处理"></a>错误集中处理
+### 错误集中处理
 
 **1、验证过程中出现根据路径找不到匹配文件等如下情况**
 

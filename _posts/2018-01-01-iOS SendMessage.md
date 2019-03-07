@@ -4,8 +4,10 @@ title:      iOS消息发送与转发理解
 date:       2018-01-01
 author:     "caoyq"
 header-img: "img/post-bg-1.jpg"
+catalog: true
 tags:
     - iOS
+    - runtime
 ---
 
 > 消息的发送与转发还是利用到oc中的黑魔法runtime实现的

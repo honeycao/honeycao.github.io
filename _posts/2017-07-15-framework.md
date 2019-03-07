@@ -5,25 +5,13 @@ subtitle:   学习SDK中的framework的制作方法
 date:       2017-07-15
 author:     "caoyq"
 header-img: "img/post-bg-1.jpg"
+catalog: true
 tags:
     - SDK
 ---
 
-### 导航
-* [framework了解](#framework了解)
-* [制作 framework](#制作 framework)
-    * [Xcode 中创建一个空的 framework](#Xcode 中创建一个空的 framework)
-    * [更改参数](#更改参数)
-    * [创建自己功能类代码](#创建自己功能类代码)
-    * [设置 Headers 和 Resources](#设置 Headers 和 Resources)
-* [编译与合并](#编译与合并)
-* [在其他地方使用我们的 framework](#在其他地方使用我们的 framework)
-* [注意事项](#注意事项)
-* [Reference](#Reference)
 
-------
-
-### <a id="framework了解"></a>framework了解
+### framework了解
 
 **一、什么是库？**
 
@@ -67,17 +55,17 @@ tags:
 
 ------
 
-### <a id="制作 framework"></a>制作 framework
+### 制作 framework
 >Xcode版本： 8.3.2 (8E2002)
 
-#### <a id="Xcode 中创建一个空的 framework"></a>1、Xcode 中创建一个空的 framework
+#### 1、Xcode 中创建一个空的 framework
 
 > Xcode:  `File -> New -> Project -> Framework & Library -> Cocoa Touch Framework`
 
 ![create_empty_framework](/img/in-post/framework/create_empty_framework.png)
 
 
-#### <a id="更改参数"></a>2、更改参数
+#### 2、更改参数
 
 **2.1、`TARGET -> Build Settings -> Architectures`**
 
@@ -89,11 +77,11 @@ tags:
 
 **2.3、对于使用`category`时，必须配置 `Other Linker Flags` 为 `-ObjC`**
 
-#### <a id="创建自己功能类代码"></a>3、创建自己功能类代码
+#### 3、创建自己功能类代码
 
 ![fk_demo_style](/img/in-post/framework/fk_demo_style.png)
 
-#### <a id="设置 Headers 和 Resources"></a>4、设置 Headers 和 Resources
+#### 4、设置 Headers 和 Resources
 
 > 在`TARGETS` -> `Build Phases` -> `Headers` 中添加头文件，Public 中添加公开的头文件 
 >
@@ -103,7 +91,7 @@ tags:
 
 ------
 
-### <a id="编译与合并"></a>编译与合并
+### 编译与合并
 
 > 合并则分为两种，一个手动，一个脚本
 >
@@ -189,10 +177,9 @@ tags:
 
   ![fk_run_script](/img/in-post/framework/fk_run_script.png)
 
-
 ------
 
-### <a id="在其他地方使用我们的 framework"></a>在其他地方使用我们的 framework
+### 在其他地方使用我们的 framework
 
 **1、将符合要求的 framework 拖拉到其他项目中，如果有 bundle 资源文件，那么也必须单独拖拉一份到项目中去**
 
@@ -204,13 +191,13 @@ tags:
 
 ------
 
-### <a id="注意事项"></a>注意事项
+### 注意事项
 **1、当`framework`不是同时支持模拟器和真机的时候，运行项目则会出现以下的问题**
 ![fk_check](/img/in-post/framework/fk_error.png)
 
 ------
 
-### <a id="Reference"></a>Reference
+### Reference
 
 * [打包到appstore出现的问题](http://www.jianshu.com/p/91ac96a0f445)，后面遇到作为一个参考
 * [更多的一些注意事项](http://www.jianshu.com/p/87dbf57cfe4a)

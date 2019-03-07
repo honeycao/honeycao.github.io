@@ -5,12 +5,12 @@ subtitle:
 date:       2018-05-23
 author:     "AllenCao"
 header-img: "img/post-bg-2.png"
+catalog: true
 tags:
+    - iOS
     - 私有库
     - 组件化
 ---
-
-[TOC]
 
 ### 本地私有库
 

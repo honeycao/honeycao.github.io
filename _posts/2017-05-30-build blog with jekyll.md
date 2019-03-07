@@ -5,34 +5,14 @@ subtitle:   叫你如何使用jekyll + GitHub Page搭建最简单的博客
 date:       2017-05-30
 author:     "caoyq"
 header-img: "img/post-bg-1.jpg"
+catalog: true
 tags:
     - blog
+    - jekyll
 ---
 
-### 目录
 
-* [说在前面的话](#说在前面的话)
-* [jekyll介绍](#jekyll介绍)
-* [jekyll安装](#jekyll安装)
-    * [1、事先准备](#1、事先准备)
-    * [2、RubyGems 安装 Jekyll并启动](#2、RubyGems 安装 Jekyll并启动)
-* [初版博客](#初版博客)
-    * [1、目录结构](#1、目录结构)
-    * [2、编写博客文章](#2、编写博客文章)
-    * [3、部署到远端](#3、部署到远端)
-* [博客模板](#博客模板)
-* [拓展工具](#拓展工具)
-    * [1、域名](#1、域名)
-    * [2、数据统计](#2、数据统计)
-    * [3、评论](#3、评论)
-    * [4、分享](#4、分享)
-    * [5、404公益页面](#5、404公益页面)
-* [Refrerence](#Refrerence)
-* [Q&A（持续更新）](#Q&A（持续更新）)
-
-------
-
-### <a id="说在前面的话"></a>说在前面的话
+### 说在前面的话
 
 作为一个和电脑、代码打交道的我，一直都想拥有自己的博客，一切都显得那么高(zhuang)大(bi)上(yong)，在下定决心之后就在网上到处查找资料，最终发现一般用的就三种：`WordPress`、`Hexo`、`Jekyll`，最终权衡利弊选定了jekyll来实现博客搭建。
 
@@ -40,7 +20,7 @@ tags:
 
 ------
 
-### <a id="jekyll介绍"></a>jekyll介绍
+### jekyll介绍
 
 `jekyll`是一个简单的免费的Blog生成工具，一个生成静态网页的工具，不需要数据库支持，只用 [Markdown](http://daringfireball.net/projects/markdown/) (或 [Textile](http://textile.sitemonks.com/))、[Liquid](http://wiki.shopify.com/Liquid)、HTML & CSS 就可以构建可部署的静态网站，最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。
 
@@ -49,9 +29,9 @@ tags:
 
 ------
 
-### <a id="jekyll安装"></a>jekyll安装
+### jekyll安装
 
-#### <a id="1、事先准备"></a>1、事先准备
+#### 1、事先准备
 
 安装 `Jekyll` 相当简单，但是你得先做好一些准备工作 开始前你需要确保你在系统里已经有如下配置
 
@@ -61,7 +41,7 @@ tags:
 * Linux, Unix, or Mac OS X（官方文档并不建议在Windows平台安装）
 * Mac用户需要安装Xcode和Command-Line Tools，下载方式`Preferences → Downloads → Components`
 
-#### <a id="2、RubyGems 安装 Jekyll并启动"></a>2、RubyGems 安装 Jekyll并启动
+#### 2、RubyGems 安装 Jekyll并启动
 
 安装 jekyll
 
@@ -83,9 +63,9 @@ tags:
 
 ------
 
-### <a id="初版博客"></a>初版博客
+### 初版博客
 
-#### <a id="1、目录结构"></a>1、目录结构
+#### 1、目录结构
 基本jekyll网站启动后，本地目录结构如下，至于目录结构意义，可以参考 <a target="blank" href='http://jekyll.com.cn/docs/structure'>官方文档目录结构</a>
 
     .
@@ -111,7 +91,7 @@ tags:
 
 看能力去自行修改对应文件，重新 `jekyll serve` 就可以看到效果，有些修改并不需要重新运行这个命令，具体的可尝试下就知道。
 
-#### <a id="2、编写博客文章"></a>2、编写博客文章
+#### 2、编写博客文章
 
 这里所有的博客文章都是放在 `_post` 目录下面
 
@@ -138,7 +118,7 @@ categories: blog
 
 **注意：模板是支持markdown语法，但不是支持全部语法，所以这个方面是有待改进。**
 
-#### <a id="3、部署到远端"></a>3、部署到远端
+#### 3、部署到远端
 
 这里是部署到`GitHub Page`，除了这个也可以部署到 `Gitlab`、`Coding`等，主要就是当做一个免费的服务器使用。
 
@@ -156,7 +136,7 @@ categories: blog
 
 ------
 
-### <a id="博客模板"></a>博客模板
+### 博客模板
 
 毕竟不是所有人都会`css`、`js`和`html`，所以有一个模板就显得很关键了，jekyll官方也提供了 <a target="blank" href='http://jekyllthemes.org/'>jekyll主题</a>，基于模板只需简单修改就可以使用了。<br/>
 如果对于我博客模板有兴趣的，可以到我的 <a target="blank" href='https://github.com/honeycao/honeycao.github.io'>GitHub博客</a> 进行查看，或者下载下来运行看看，终端进入目录下，运行 `jekyll serve`，然后在浏览器里输入： <a target="blank" href='http://127.0.0.1:4000'>http://127.0.0.1:4000</a>，就可以看到博客效果了。
@@ -169,36 +149,35 @@ categories: blog
 * 把 `images/` 目录下图片替换，把 `img/in-post/`目录下 博客相关图片去掉
 * 修改 `_config.yml` 文件里面的内容为你自己的。
 
-
 ------
 
-### <a id="拓展工具"></a>拓展工具
+### 拓展工具
 
 >在我自己的博客中，除了模板自有功能之外，也添加了许多拓展的工具，如：评论、分享等，这里就介绍下我自己的经验，这些拓展工具并不统一，只是作为一个参考而已，仁者见仁智者见智，另外小伙伴们如果有更好的拓展工具也可以介绍给我，不胜感激。。。
 
-#### <a id="1、域名"></a>1、域名
+#### 1、域名
 如果没有自己的域名，那么博客网址就是 `username.github.io`，看起来总不是那么好，所以有兴趣就可以购买一个自己的域名玩玩，至于购买哪样的那看你自己的经济了；购买途径网上也有很多，这里也不多作介绍，主要说下域名解析的问题，一般购买域名的地方都可以免费解析，比如我是在 <a target="blank" href='https://cloud.baidu.com'>百度云</a> 买的，同时可以免费解析，如果没有地方解析，那么介绍一个可以免费解析的地方——<a target="blank" href='https://www.dnspod.cn'>DNSPOD</a>，不管在哪解析，解析步骤都是一样的，我自己在解析的时候就碰到一个问题，耽搁好久才解决，所以下面就贴出正确解析的方法
 
 ![域名解析](/img/in-post/jekyll/域名解析.png)
 
 **主要注意记录值填写自己博客仓库名就行**
 
-#### <a id="2、数据统计"></a>2、数据统计
+#### 2、数据统计
 
 * <a target="blank" href='https://tongji.baidu.com'>百度统计</a>：统计网站访问详情，不过由于才疏学浅并不能导出统计数据，所以只是用来作为一个流量页面展示
 * <a target="blank" href='http://busuanzi.ibruce.info'>不蒜子</a>：和百度统计相辅相成，这个只能用于获取统计数据，而并没有展示页面
 
-#### <a id="3、评论"></a>3、评论
+#### 3、评论
 由于多说6月初就停用了，所以也不考虑它。
 
 * <a target="blank" href='https://changyan.kuaizhan.com'>畅言</a>：一开始想的是这个，但是由于自己的域名并没有备案，所以这个没法用
 * <a target="blank" href='https://gentie.163.com'>网易云跟帖</a>：这个是目前自己用的，效果也很好，主要是并不需要备案。（网易云跟帖也出了最新通知，8月1号之后就没法用了）
 
-#### <a id="4、分享"></a>4、分享
+#### 4、分享
 
 * <a target="blank" href='http://share.baidu.com'>百度分享</a>：是目前所用的，目前自己用尚存在一个问题并没有解决：安装并成功分享之后，百度分享后台并没有获取到数据。。。
 
-#### <a id="5、404公益页面"></a>5、404公益页面
+#### 5、404公益页面
 
 一般的404页面没什么特色，偶然看到别人网站上404页面显示的是腾讯寻找丢失儿童的公益广告，感觉这个挺不错的，就借鉴过来用了；<br/>
 至于用法就是把下面代码复制到博客目录下 `404.html` 文件中。可自行修改主页信息和链接。
@@ -209,7 +188,7 @@ categories: blog
 
 ------
 
-### <a id="Refrerence"></a>Refrerence
+### Refrerence
 
 * [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
 
@@ -219,7 +198,7 @@ categories: blog
 
 -------
 
-### <a id="Q&A（持续更新）"></a>Q&A（持续更新）
+### Q&A（持续更新）
 
 >**错误是无法避免，我们能做的就是正视它**。<br/>
 使用过程中遇到任何问题，可以联系我，或者在下面留言，我会尽力去解决，并在下面记录，或者你遇到了问题你自己已经解决也可以告诉我，目的就是为了让更多的人少走弯路。

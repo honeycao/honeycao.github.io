@@ -4,6 +4,7 @@ title:      Markdown 语法学习
 date:       2017-02-03
 author:     "caoyq"
 header-img: "img/post-bg-1.jpg"
+catalog: true
 tags: 
     - markdown
 ---
@@ -14,7 +15,7 @@ tags:
 
 ![Markdown](/img/in-post/markdown/Markdown.jpeg)
 
-## 1. 排版
+### 1. 排版
 
 **粗体** *斜体* 
 
@@ -33,7 +34,7 @@ tags:
 - 项目1
 - 项目2
 
-## 2. 图片与链接
+### 2. 图片与链接
 
 图片:
 ![祈祷](http://i63.tinypic.com/apblvs.jpg)
@@ -41,7 +42,7 @@ tags:
 
 [这是去往我的博客的链接](http://arthurcao.com)
 
-## 3. 标题
+### 3. 标题
 
 以下是各级标题, 最多支持5级标题
 
@@ -54,7 +55,7 @@ tags:
 ###### h5
 ```
 
-## 4. 代码
+### 4. 代码
 
 示例:
 
@@ -94,7 +95,7 @@ self.salary = salary
 Employee.empCount += 1
 ```
 
-# 5. Markdown 扩展
+### 5. Markdown 扩展
 
 Markdown 扩展支持:
 
@@ -107,23 +108,23 @@ Markdown 扩展支持:
 * 时序图与流程图
 * MathJax 公式
 
-## 5.1 表格
+#### 5.1 表格
 
 Item     | Value
 -------- | ---
-Computer | \$1600
-Phone    | \$12
-Pipe     | \$1
+Computer | 1600
+Phone    | 12
+Pipe     | 1
 
 可以指定对齐方式, 如Item列左对齐, Value列右对齐, Qty列居中对齐
 
 | Item     | Value | Qty   |
 | :------- | ----: | :---: |
-| Computer | \$1600 |  5    |
-| Phone    | \$12   |  12   |
-| Pipe     | \$1    |  234  |
+| Computer | 1600 |  5    |
+| Phone    | 12   |  12   |
+| Pipe     | 1    |  234  |
 
-## 5.2 定义型列表
+#### 5.2 定义型列表
 
 名词 1
 :    定义 1（左侧有一个可见的冒号和四个不可见的空格）
@@ -133,7 +134,7 @@ Pipe     | \$1
 
         代码块（左侧有八个不可见的空格）
 
-## 5.3 Html 标签
+#### 5.3 Html 标签
 
 支持在 Markdown 语法中嵌套 Html 标签，譬如，你可以用 Html 写一个纵跨两行的表格：
 
@@ -169,12 +170,12 @@ Pipe     | \$1
 
 <img src="http://i63.tinypic.com/apblvs.jpg" width="100px" />
 
-## 5.4 脚注
+#### 5.4 脚注
 
 给我的博客链接[^footnote] 创建一个脚注
 [^footnote]: [我的个人博客链接](http://arthurcao.com)
 
-## 5.5 todo list
+#### 5.5 todo list
 
 Blog 近期任务安排:
 
@@ -186,13 +187,13 @@ Blog 近期任务安排:
 - [ ] blog 维护
 - [ ] 修复issue4
 
-## 5.6 目录
+#### 5.6 目录
 
 通过 `[TOC]` 在文档中插入目录, 如:
 
 [TOC]
 
-## 5.7 时序图与流程图
+#### 5.7 时序图与流程图
 
 ```sequence
 Alice->Bob: Hello Bob, how are you?
@@ -218,7 +219,7 @@ cond(no)->op
 > - [时序图语法](http://bramp.github.io/js-sequence-diagrams/)
 > - [流程图语法](http://adrai.github.io/flowchart.js)
 
-## 5.8 MathJax 公式
+#### 5.8 MathJax 公式
 
 $ 表示行内公式： 
 

@@ -5,10 +5,11 @@ header-img: img/home-bg.jpg
 email:      honeycao9268@163.com
 description: "做一个活在现实而不缺乏理想的纯粹的人"
 keyword: "曹亚强, 曹亚强的博客, AllenCao Blog, AllenCao, Caoyq Blog, Caoyq, arthurcao, Arthur, honeycao"
-url: "https://arthurcao.com"              # your host, for absolute URL
-baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
+url: "https://caoyaqiang.top"              # your host, for absolute URL
+baseurl: ""                              # for example, '/blog' if your blog hosted on 'host/blog'
 
-
+# Publish posts or collection documents with a future date.
+future: true
 
 # SNS settings
 RSS: false
@@ -40,9 +41,15 @@ gems: [jekyll-paginate]
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
+highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 
 # Disqus settings
@@ -72,16 +79,22 @@ sidebar-avatar: /img/avatar-me.jpg      # use absolute URL, seeing it's used in 
 
 
 
-# Featured Tags
-featured-tags: false                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+# Featured Tags 大于1才会显示
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value 
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
 
 
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
 
 # Friends
 friends: [
     {
-        title: "Caoyq Blog",
-        href: "http://arthurcao.com"
+        title: "my Blog",
+        href: "http://caoyaqiang.top"
     }
 ]

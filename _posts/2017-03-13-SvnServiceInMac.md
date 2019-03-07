@@ -5,8 +5,9 @@ subtitle:
 date:       2017-03-13
 author:     "AllenCao"
 header-img: "img/post-bg-2.png"
+catalog: true
 tags:
-    - 服务器
+    - svn
 ---
 
 ### 一、创建`svn repository`
