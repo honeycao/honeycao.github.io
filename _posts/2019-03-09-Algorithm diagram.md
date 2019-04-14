@@ -200,6 +200,40 @@ tags:
 
 最终二分查找需要7次，而简单查找需要100次。
 
+```swift
+/// 二分查找
+///
+/// - Parameters:
+///   - list: 有序列表
+///   - target: 目标值
+/// - Returns: 目标值对应的下标，不存在返回-1
+func binary_search(_ list: [Int], _ target: Int) -> Int {
+    
+    //分析：每次猜中间的元素，如果猜的数字小了，就相应修改low，如果猜的数字大了，就修改high
+    var low = 0
+    var high = list.count
+    while low <= high {
+        let mid = (low + high) / 2
+        let guess = list[mid]
+        if guess == target {
+            return mid
+        }else if guess > target {
+            high = mid - 1
+        }else {
+            low = mid + 1
+        }
+    }
+    return -1
+}
+
+//测试
+let ary = [1, 3, 5, 7, 9]
+let result = binary_search(ary, 7)
+print(result)
+```
+
+
+
 
 
 ####  选择排序
