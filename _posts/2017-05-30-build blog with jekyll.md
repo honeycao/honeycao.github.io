@@ -4,7 +4,7 @@ title:      jekyll开启个人博客搭建之路
 subtitle:   叫你如何使用jekyll + GitHub Page搭建最简单的博客
 date:       2017-05-30
 author:     "caoyq"
-header-img: "img/post-bg-1.jpg"
+header-img: "img/post-bg-bookdesk.jpg"
 catalog: true
 tags:
     - blog

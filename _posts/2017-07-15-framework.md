@@ -4,7 +4,7 @@ title:      framework及其制作
 subtitle:   学习SDK中的framework的制作方法
 date:       2017-07-15
 author:     "caoyq"
-header-img: "img/post-bg-1.jpg"
+header-img: "img/post-bg-bookdesk.jpg"
 catalog: true
 tags:
     - SDK

@@ -3,7 +3,7 @@ layout:     post
 title:      Markdown 语法学习
 date:       2017-02-03
 author:     "caoyq"
-header-img: "img/post-bg-1.jpg"
+header-img: "img/post-bg-bookdesk.jpg"
 catalog: true
 tags: 
     - markdown

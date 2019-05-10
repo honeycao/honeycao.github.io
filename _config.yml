@@ -4,8 +4,8 @@ SEOTitle:   愚者 | Fool Blog
 header-img: img/home-bg.jpg
 email:      honeycao9268@163.com
 description: "做一个活在现实而不缺乏理想的纯粹的人"
-keyword: "愚者, 千虑必有一得, Fool Blog, AllenCao, Caoyq Blog, Caoyq, arthurcao, Arthur, honeycao"
-url: "https://caoyaqiang.top"              # your host, for absolute URL
+keyword: "愚者, 千虑必有一得, Fool Blog, foolishman, honeycao"
+url: "https://foolishman.top"              # your host, for absolute URL
 baseurl: ""                              # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
@@ -95,6 +95,6 @@ page-mathjax: false
 friends: [
     {
         title: "my Blog",
-        href: "http://caoyaqiang.top"
+        href: "http://foolishman.top"
     }
 ]

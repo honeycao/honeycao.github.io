@@ -3,7 +3,7 @@ layout:     post
 title:      iOS消息发送与转发理解
 date:       2018-01-01
 author:     "caoyq"
-header-img: "img/post-bg-1.jpg"
+header-img: "img/post-bg-bookdesk.jpg"
 catalog: true
 tags:
     - iOS
