@@ -4,7 +4,7 @@ title:      读书《算法图解》
 subtitle:   一本基础的算法入门书籍
 date:       2019-03-09
 author:     "愚者"
-header-img: "img/post-bg-algorithm.jpg"
+header-img: "img/post-bg-readbook.jpg"
 catalog: true
 tags:
     - 算法

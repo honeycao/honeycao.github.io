@@ -4,7 +4,7 @@ title:      组件化之私有库的创建
 subtitle:   
 date:       2018-05-23
 author:     "AllenCao"
-header-img: "img/post-bg-2.png"
+header-img: "img/post-bg-bookdesk.jpg"
 catalog: true
 tags:
     - iOS
